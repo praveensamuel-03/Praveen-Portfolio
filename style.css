@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Poppins','sans-serif';
+}
+
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .topnav a {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .topnav .icon {
+    display: none;
+  }
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  } */
+
+
+/* home section */
+
+#home{
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background: url(images/bgc.jpg); */
+}
+.welcome {
+    align-items: center;
+    text-align: center;
+    top: 25%;
+    /* background-color: violet; */
+    position: relative;
+}
+
+.welcome p{
+    font-size: 19px;
+}
+.welcome h3{
+    font-size: 25px;
+    color:white;
+    text-transform: uppercase;   
+}
+
+.welcome h1{
+    font-size: 50px;
+    /* position: absolute; */
+    left: 40%;
+    margin: 5px;
+    color: aqua;
+}
+
+.welcome .typedeffect{
+    font-size: 50px;
+}
+
+.welcome .icons{
+    margin-left: 10px;
+}
+.icons img{
+    height: 40px;
+}
+
+.icons li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.cv{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+.cv a{
+    text-decoration: none;
+}
+
+
+/* about */
+
+#about{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: yellow; */
+}
+
+#about .title{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 25px;
+}
+
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    position: relative;
+    top: 70px;
+}
+
+.aboutme .photo{
+    margin-left: 100px;
+    /* flex-basis: 30%;  */
+}
+
+.aboutme .photo img{
+    border-radius: 50%;
+    /* width: 90%; */
+    height: 350px;
+    width: 350px;
+    border: 2px solid black;   
+}
+
+.details{
+    padding: 40px;
+    /* background-color: yellow; */
+}
+
+.aboutme .details h4{
+    margin-top: 15px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.aboutme .details .info{
+    margin-top: 15px;
+    font-size: 17px;
+    /* letter-spacing: 2px; */
+    line-height: 22px;
+}
+
+.tabcontents ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+.tabcontents ul li span{
+    color: blue;
+    font-size: 18px;
+}
+
+/* knowledge */
+#knowledge{
+    height: 100vh;
+    /* background-color: red; */
+
+}
+
+#knowledge .title{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 25px;
+}
+
+/* skills */
+
+#education{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* background-color: violet; */
+    color: black;
+}
+
+#education .title{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 25px;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 70px auto;
+    /* background-color: yellow; */
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* background: rebeccapurple; */
+    opacity:  0;
+    animation: movedown 1s linear forwards;
+}
+
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }  
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+
+
+.textbox{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-family: 15px;
+    border: 2px solid black;
+}
+
+.left{
+    left: 0;
+}
+.right{
+    left: 50%;
+}
+
+.right img{
+    left: -20px;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    border: 1px solid black;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: red;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+    
+}
+
+.textbox h2{
+    font-weight: 200;
+}
+
+.textbox small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid red ;
+    right: -15px;
+}
+
+.right-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid red ;
+    left: -15px;
+}
+
+/* works */
+
+#work{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+.works{
+    position: relative;
+    top: 90px;
+}
+
+#work .title{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+}
+
+
+/* contact */
+
+#contact{
+    height: 100vh;
+    /* background-color: red; */
+    width: 100%;
+    /* background: url(images/bg1.jpg);  */
+}
+
+#contact .title{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.inputgroup{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input,textarea{
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        border: 1px solid black;
+        /* color: white; */
+        /* background:transparent; */
+        font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;top: 0;
+    padding: 10px;
+    cursor: text;
+    /* color: white; */
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:valid~label,
+input:focus~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .inputgroup{
+    flex-basis: 48%;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+@media screen and (max-width: 600px){
+
+
+    .navbar a{
+        display: none;
+    }
+
+    .icon img{
+        float: right;
+        display: block;
+    }
+
+    #education{
+        position: relative;
+        top: 30px;
+        margin: 100px auto;
+    }
+
+
+    #education .timeline{
+        margin: 70px auto;
+        bottom: 0;
+    }
+
+    #experience .timeline{
+        margin:10px auto;
+        bottom: 0;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .textbox{
+        font-size: 13px;
+    }
+    .textbox small{
+        margin-bottom: 10px;
+    }
+    .right{
+        left: 0;
+    }
+    .left img, .right img{
+        left: 10px;
+    }
+    .left-arrow,.right-arrow{
+        border-right: 15px solid red;
+        border-left: 0;
+        left: -15px;
+    }
+
+    .aboutme .photo img{
+        position: relative;
+    }
+    
+}

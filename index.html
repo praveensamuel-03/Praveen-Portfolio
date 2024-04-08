@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <title>Praveen's Website</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><script src="https://kit.fontawesome.com/c34ca8255f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#work">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+    <!-- home -->
+
+    <section id="home">
+        <div class="welcome">
+            <h3>Welcome!</h3>
+            <h1>I am <span class="typedeffect"></span></h1>
+            <p>I'm a Web Developer and App Developer. My expertise is to create and Website design, graphic design and many more...</p>
+            <ul class="icons">
+                <li><a href="https://www.facebook.com/sachin.virat.988/"><img src="images/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/_praveen_samuel_/?next=%2F"><img src="images/insta.png" alt=""></a></li>
+                <li><a href="https://twitter.com/home"><img src="images/twitter.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/praveen-samuel-17613a225"><img src="images/linkedin.png" alt=""></a></li>
+            </ul>
+            <button class="cv"><a href="PRAVEEN SAMUEL PM.pdf" download >Download CV</a></button>
+        </div>
+    </section>
+    
+    <!-- about -->
+    
+    <section id="about">
+        <h1 class="title">About Me</h1>   
+        <div class="aboutme">
+            <div class="photo">
+                <img src="images/praveen.JPG" alt="">   
+            </div>
+            <div class="details">
+                <h4>Hello,I'm Praveen Samuel</h4>
+                <p class="info">To pursue a challenging career in a progressive environment where learning, innovation and creativity are encouraged, where my skills & knowledge can be enhanced to their maximum potential to contribute to the overall success and growth of the organization.</p>
+                <div class="tabcontents active-tab" id="personalinfo">
+                    <ul>
+                        <li><span>Name&ensp;&ensp;&ensp;&ensp; :</span>&ensp; Praveen Samuel</li>
+                        <li><span>Age&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;:</span>&ensp;21</li>
+                        <li><span>Phone No&ensp; :</span>&ensp;+91 9600631420</li>
+                        <li><span>Email&ensp;&ensp;&ensp; &ensp;: </span>&ensp;praveensamuel2003@gmail.com</li>
+                        <li><span> Country&ensp; &ensp;:</span>&ensp;India</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- knowledge -->
+    <section id="knowledge">
+        <h1 class="title">My knowledge in software</h1>
+
+    </section>
+
+    <!-- skills -->
+
+    <section id="education">
+        <h1 class="title">EDUCATION</h1>
+        <div class="timeline">
+            <div class="container left">
+                <img src="images/kpr.jpg" alt="" srcset="">
+                <div class="textbox">
+                    <h2>KPR INSTITUTE OF ENGINEERING AND TECHNOLOGY</h2><br>
+                    <small>2021-2025</small>
+                    <p>CGPA - 8.4</p>
+                    <span class="left-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container right">
+                <img src="images/velammal.png" alt="" srcset="">
+                <div class="textbox">
+                    <h2>Velammal Vidyalaya Sr. Sec. School</h2><br>
+                    <small>2021</small>
+                    <p>Percentage - 92.5%</p>
+                    <span class="right-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left">
+                <img src="images/velammal.png" alt="">
+                <div class="textbox">
+                    <h2>Velammal Vidyalaya Sr. Sec. School</h2><br>
+                    <small>2019</small>
+                    <p>Percentage - 90.5%</p>
+                    <span class="left-arrow"></span>
+                </div>
+            </div>  
+        </div>   
+    </section>
+
+    <!-- Works -->
+
+    <section id="work">
+        <h1 class="title">Experience</h1>
+        <div class="works">
+            
+            <div class="timeline">
+                <div class="container left">
+                    <img src="images/kpr.jpg" alt="" srcset="">
+                    <div class="textbox">
+                        <h2>NATIONAL INSTITUE OF ENGINEERING AND TECHNOLOGY</h2><br>
+                        <small>2022</small>
+                        <p>Design and Development of Virtual Lab</p>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+    
+                <div class="container right">
+                    <img src="images/velammal.png" alt="" srcset="">
+                    <div class="textbox">
+                        <h2>KG IT SERVIES</h2><br>
+                        <small>2022</small>
+                        <p>Machine Learning Intern</p>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact">
+        <h1 class="title">CONTACT ME</h1>
+        <div class="contact-form">
+            <form onsubmit="sendEmail(); reset(); return false;" >
+                <div class="row">
+                    <div class="inputgroup">
+                        <input type="text" id="name" required="required">
+                        <label for="name">Your name</label>
+                    </div>
+                    <div class="inputgroup">
+                        <input type="email" id="email" required="required">
+                        <label for="email">Email Id</label>
+                    </div>
+                </div>
+                
+                <div class="inputgroup">
+                    <input type="text" id="number" required="required">
+                    <label for="number">Phone no.</label>
+                </div>
+                <div class="inputgroup">
+                    <textarea id="message" required rows="8"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>  
+    <script>
+        var typed = new Typed(".typedeffect",{
+            strings: ["Praveen Samuel" , "a Web Developer" , "a Software Developer"],
+            typeSpeed : 50,
+            backSpeed : 50,
+            loop:  true
+        })
+
+        
+
+        function myFunction(){
+            document.getElementsByClassName("icon").style.display = "block"
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>  
+    
+
+
+</body>
+</html>
